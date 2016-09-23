@@ -1,0 +1,49 @@
+body{
+  padding: 20px;
+  background-color: black;
+}
+.world{
+  position: relative;
+}
+.row{
+  display: block;
+  margin-bottom: -4px;
+}
+.block{
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+}
+.brick{
+  height: 23px;
+  width: 23px;
+  background-color: rgb(50, 54, 136);
+  border: 1px solid rgb(25, 28, 73);
+}
+.score-board{
+  color: lightgreen;
+}
+.pacman{
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-image: url("images/pacman.gif");
+  background-size: cover;
+}
+.coin{
+  background-image: url("images/coin.gif");
+  background-size: contain;
+}
+.cherry{
+  background-image: url("images/cherry.png");
+  background-size: contain;
+}
+.left{
+  transform: rotate(180deg);
+}
+.up{
+  transform: rotate(-90deg);
+}
+.down{
+  transform: rotate(90deg);
+}
