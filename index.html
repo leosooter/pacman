@@ -8,14 +8,30 @@
     <script type="text/javascript" src="javascript.js"></script>
   </head>
   <body>
-    <div class="world-wrapper">
-      <div id="game-over">
-        <h1>Game Over!</h1>
-      </div>
+    <div id="world-wrapper">
       <div id="pacman1" class="pacman"></div>
       <div id="pacman2" class="pacman left"></div>
       <div id="ghost1" class="ghost"></div>
       <div id="ghost2" class="ghost"></div>
+      <div id="ghost3" class="ghost"></div>
+      <form id="start-screen" class="top-screen">
+        <h3>How many Players?</h3>
+        <label>1-Player<input type="radio" name="players" value="1" checked></label>
+        <label>2-Players<input type="radio" name="players" value="2"></label>
+
+
+        <h3>Difficulty Level</h3>
+        <label>Easy<input type="radio" name="difficulty" value="0"></label>
+        <label>Medium<input type="radio" name="difficulty" value="1"></label>
+        <label>Hard<input type="radio" name="difficulty" value="2" checked></label>
+        <label>Scary<input type="radio" name="difficulty" value="3"></label>
+        <button id="start-game" type="button" name="start">Start Game</button>
+      </form>
+
+      <div id="game-over" class="top-screen hidden">
+        <h1>Game Over!</h1>
+      </div>
+
       <div id="world">
 
       </div>
@@ -25,6 +41,7 @@
       <div>Player 1 Score: <span id="score1">0</span></div>
       <div>Player 2 Score: <span id="score2">0</span></div>
     </div>
+    <button id="new-game" type="button" name="button">New Game</button>
 
   </body>
 </html>
