@@ -253,14 +253,8 @@ $(document).ready(function() {
 
   ///// Key- commands for moving pacman 1 and 2 and for triggering debug mode
   $(document).keydown(function(key){
-    /*
     if(key.which === 37 && pacman1.alive){
       move.moveLeft(pacman1);
-    }
-    */
-    if(key.which == 37){
-
-     $(".pacman").css('transform', 'rotate(180deg)');
     }
     else if(key.which === 38 && pacman1.alive){
       move.moveUp(pacman1);
